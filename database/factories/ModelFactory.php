@@ -70,11 +70,3 @@ $factory->define(App\Statistic::class, function (Faker\Generator $faker) {
         'year' => rand(2012,2016),
     ];
 });
-
-$factory->define(App\MatchTeam::class, function (Faker\Generator $faker) {
-    return [
-        'match_id' => App\Match::all()->random()->id,
-        'team1_id' => App\Team::all()->random()->id,
-        'team2_id' => App\Team::all()->random()->id,
-    ];
-});
